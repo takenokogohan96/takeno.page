@@ -6,6 +6,11 @@
     --90Black: #1a1a1a;
 
     color-scheme: light dark;
+
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media (prefers-color-scheme: light) {
