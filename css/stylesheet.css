@@ -1,0 +1,29 @@
+:root {
+    --takeno_green: #4f7165;
+    --deep_green: #2b3a36;
+    --cinnabar: #ff3300;
+    --10White: #e6e6e6;
+    --90Black: #1a1a1a;
+
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+   body {
+      background-color: var(--10White);   
+   }
+
+   h1 {
+      color: var(--90Black);
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   body {
+      background-color: var(--90Black);   
+   }
+
+   h1 {
+      color: var(--10White);
+   }
+}
