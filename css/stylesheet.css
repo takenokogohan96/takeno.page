@@ -23,6 +23,10 @@
    h1 {
       color: var(--90Black);
    }
+
+   .accountlist button {
+      border: 1px solid var(--90Black);
+   }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +37,10 @@
    h1 {
       color: var(--10White);
    }
+
+   .accountlist button {
+      border: 1px solid var(--10White);
+   }
 }
 
 /*symbolContainer*/
@@ -40,7 +48,7 @@
 .symbolContainer{
    height: 512px;
    display: flex;
-   flex-direction:column;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
 }
@@ -60,23 +68,56 @@
 @media screen and (min-width:1024px)  {
    .icon{ width: 512px; }
    .comment{ font-size: 32px; }
-   .symbolContainer{ height: 1024px; }
+   .symbolContainer{ height: 768px; }
 }
 
 /*linkContainer*/
-
-button{
-   width: 256px;
-   height: 64px;
-
-   background-color: transparent;
-   border: 1px solid var(--takeno_green);
+.linkContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-button{
-   width: 256px;
-   height: 64px;
+.accountlist{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width:270px;
+}
 
-   background-color: transparent;
-   border: 1px solid var(--takeno_green);
+.linkbutonn {
+   height:48px;
+   width:240px;
+   margin: 15px;
+   background-color: #303030;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.misskey-icon {
+   height: 48px;
+   width: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.misskey-caption {
+   height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.misskey-caption p{
+   font-size: 16px;
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+   .accountlist{ width: 540px; }
+}
+@media screen and (min-width:1024px)  {
+   .accountlist{ width: 540px; }
 }
