@@ -2,34 +2,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Takeno</title>
+    <meta name="viewport" content="width=device-width">
+    
     <link rel=”icon” href=“/favicon.ico”>
     <link href="/css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+
+    <title>Takeno</title>
 </head>
 <body>
-    <picture>
-        <source srcset="/img/Takeno_light.svg" media="(prefers-color-scheme: dark)">
-        <source srcset="/img/Takeno_dark.svg">
-        <img src="/img/Takeno_dark.svg" alt="Takeno icon" class="icon">
-    </picture>
-    <p>☕ &lt; Coffee is Oishii.</p>
 
-    <h2>SNS</h2>
-    <ul>
-        <li><a href= "https://misskey.io/@takenokogohan96" >misskey.io</a></li>
-        <li><a href= "https://github.com/takenokogohan96" >github</a></li>
-        <li><a href= "https://www.youtube.com/channel/UCpMu4e-LOxfTBLCHquU5_Zg" >Youtube</a></li>
-        <li><a href= "https://live-theater.net/@takenokogohan96" >LTN</a></li>
-    </ul>
+    <div class="symbolContainer">
+        <div class="takenoSymbol">
+            <picture>
+                <source srcset="/img/Takeno_light.svg" media="(prefers-color-scheme: dark)">
+                <source srcset="/img/Takeno_dark.svg">
+                <img src="/img/Takeno_dark.svg" alt="Takeno icon" class="icon">
+            </picture>
+        </div>
+        <div class="comment">
+            <p>☕ &lt; Coffee is Oishii.</p>
+        </div>
+    </div>
 
-    <h2>Game</h2>
-    <ul>    
-        <li><a href= "https://steamcommunity.com/id/takenokogohan96/" >Steam</a></li>
-        <li><a href= "https://psnprofiles.com/takenokogohan96" >PSN</a></li>
-    </ul>
+    <div class="linkContainer">
+        <h2>SNS</h2>
+        <div>
+            <button><a href= "https://misskey.io/@takenokogohan96" >misskey.io</a></button>
+            <button><a href= "https://github.com/takenokogohan96" >github</a></button>
+            <button><a href= "https://www.youtube.com/channel/UCpMu4e-LOxfTBLCHquU5_Zg" >Youtube</a></button>
+        </div>
+
+        <h2>Game</h2>
+        <div>    
+            <button><a href= "https://steamcommunity.com/id/takenokogohan96/" >Steam</a></button>
+            <button><a href= "https://psnprofiles.com/takenokogohan96" >PSN</a></button>
+        </div>
+    </div>
 </body>
 </html>
