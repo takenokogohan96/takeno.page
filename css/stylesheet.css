@@ -1,20 +1,18 @@
+/*Overall*/
+
 :root {
-    --takeno_green: #4f7165;
-    --deep_green: #2b3a36;
-    --cinnabar: #ff3300;
-    --10White: #e6e6e6;
-    --90Black: #1a1a1a;
+   --takeno_green: #4f7165;
+   --deep_green: #2b3a36;
+   --cinnabar: #ff3300;
+   --10White: #e6e6e6;
+   --90Black: #1a1a1a;
 
-    color-scheme: light dark;
+   color-scheme: light dark;
 
-    font-family: "Kode Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.icon{
-   width: 20%; 
+   font-family: "Kode Mono", monospace;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,6 +22,10 @@
 
    h1 {
       color: var(--90Black);
+   }
+
+   .accountlist button {
+      border: 1px solid var(--90Black);
    }
 }
 
@@ -35,4 +37,87 @@
    h1 {
       color: var(--10White);
    }
+
+   .accountlist button {
+      border: 1px solid var(--10White);
+   }
+}
+
+/*symbolContainer*/
+
+.symbolContainer{
+   height: 512px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.takenoSymbol{ text-align: center; }
+.icon{ width: 256px; }
+.comment{ 
+   text-align: center; 
+   font-size: 16px;
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+   .icon{ width: 384px; }
+   .comment{ font-size: 24px; }
+   .symbolContainer{ height: 768px; }
+}
+@media screen and (min-width:1024px)  {
+   .icon{ width: 512px; }
+   .comment{ font-size: 32px; }
+   .symbolContainer{ height: 768px; }
+}
+
+/*linkContainer*/
+.linkContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.accountlist{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width:270px;
+}
+
+.linkbutonn {
+   height:48px;
+   width:240px;
+   margin: 15px;
+   background-color: #303030;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.misskey-icon {
+   height: 48px;
+   width: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.misskey-caption {
+   height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.misskey-caption p{
+   font-size: 16px;
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+   .accountlist{ width: 540px; }
+}
+@media screen and (min-width:1024px)  {
+   .accountlist{ width: 540px; }
 }

@@ -1,35 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
-    <title>Takeno</title>
+    <meta name="viewport" content="width=device-width">
+    
     <link rel=”icon” href=“/favicon.ico”>
-    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="/css/stylesheet.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Takeno</title>
+
 </head>
 <body>
-    <picture>
-        <source srcset="/img/Takeno_light.svg" media="(prefers-color-scheme: dark)">
-        <source srcset="/img/Takeno_dark.svg">
-        <img src="/img/Takeno_dark.svg" alt="Takeno icon" class="icon">
-    </picture>
-    <p>☕ &lt; Coffee is Oishii.</p>
+    <div class="symbolContainer">
+        <div class="takenoSymbol">
+            <picture>
+                <source srcset="/img/Takeno_light.svg" media="(prefers-color-scheme: dark)">
+                <source srcset="/img/Takeno_dark.svg">
+                <img src="/img/Takeno_dark.svg" alt="Takeno icon" class="icon">
+            </picture>
+        </div>
+        <div class="comment">
+            <p>☕ &lt; Coffee is Oishii.</p>
+        </div>
+    </div>
 
-    <h2>SNS</h2>
-    <ul>
-        <li><a href= "https://misskey.io/@takenokogohan96" >misskey.io</a></li>
-        <li><a href= "https://github.com/takenokogohan96" >github</a></li>
-        <li><a href= "https://www.youtube.com/channel/UCpMu4e-LOxfTBLCHquU5_Zg" >Youtube</a></li>
-        <li><a href= "https://live-theater.net/@takenokogohan96" >LTN</a></li>
-    </ul>
-
-    <h2>Game</h2>
-    <ul>    
-        <li><a href= "https://steamcommunity.com/id/takenokogohan96/" >Steam</a></li>
-        <li><a href= "https://psnprofiles.com/takenokogohan96" >PSN</a></li>
-    </ul>
+    <div class="linkContainer">
+        <div class="accountlist">
+            <a href="https://misskey.io/@takenokogohan96">
+                <div class="linkbutonn">
+                    <div class ="misskey-icon">
+                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                    </div>
+                    <div class ="misskey-caption">
+                        <p>misskey.io</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/takenokogohan96">
+                <div class="linkbutonn">
+                    <div class ="misskey-icon">
+                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                    </div>
+                    <div class ="misskey-caption">
+                        <p>github</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCpMu4e-LOxfTBLCHquU5_Zg">
+                <div class="linkbutonn">
+                    <div class ="misskey-icon">
+                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                    </div>
+                    <div class ="misskey-caption">
+                        <p>Youtube</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://steamcommunity.com/id/takenokogohan96/">
+                <div class="linkbutonn">
+                    <div class ="misskey-icon">
+                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                    </div>
+                    <div class ="misskey-caption">
+                        <p>Sream</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://psnprofiles.com/takenokogohan96">
+                <div class="linkbutonn">
+                    <div class ="misskey-icon">
+                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                    </div>
+                    <div class ="misskey-caption">
+                        <p>PSN</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
