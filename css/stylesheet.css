@@ -46,32 +46,44 @@
 /*symbolContainer*/
 
 .symbolContainer{
-   height: 512px;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   justify-content: flex-end;
+   height: 60vh;
 }
 
 .takenoSymbol{ text-align: center; }
 .icon{ width: 256px; }
 .comment{ 
    text-align: center; 
-   font-size: 16px;
+   font-size: 20px;
 }
 
 @media screen and (min-width:768px) and ( max-width:1024px) {
    .icon{ width: 384px; }
-   .comment{ font-size: 24px; }
+   .comment{ font-size: 30px; }
    .symbolContainer{ height: 768px; }
 }
 @media screen and (min-width:1024px)  {
    .icon{ width: 512px; }
-   .comment{ font-size: 32px; }
+   .comment{ font-size: 40px; }
    .symbolContainer{ height: 768px; }
 }
 
+/*indexContainer*/
+.indexContainer{
+   margin-top: 23px;
+   display: flex;
+   justify-content: center;
+   color: #7F7F7F;
+   text-decoration: underline;
+}
+
+.profilebutton{ margin: 15px; }
+.linklistbutton{ margin: 15px; }
+
 /*linkContainer*/
+/*
 .linkContainer{
    display: flex;
    flex-direction: column;
@@ -120,4 +132,4 @@
 }
 @media screen and (min-width:1024px)  {
    .accountlist{ width: 540px; }
-}
+} */
