@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     
@@ -18,86 +17,108 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <title>Takeno</title>
-
 </head>
 <body>
-    <div class="symbolContainer">
-        <div class="takenoSymbol">
-            <picture>
-                <source srcset="/img/Takeno_light.svg" media="(prefers-color-scheme: dark)">
-                <source srcset="/img/Takeno_dark.svg">
-                <img src="/img/Takeno_dark.svg" alt="Takeno icon" class="icon">
-            </picture>
-        </div>
-        <div class="comment">
-            <p>☕ &lt; Coffee is Oishii.</p>
-        </div>
-    </div>
-    <div class="indexContainer">
-        <div class="profilebutton">
-            <a href="https://takeno.io/profile" >Profile</a>
-        </div>
-        <div class="linklistbutton">
-            <p>links</p>
-        </div>
-    </div>
-    <!--
+    <div id="app">
 
-    <div class="linkContainer">
-        <div class="accountlist">
-            <a href="https://misskey.io/@takenokogohan96">
-                <div class="linkbutonn">
-                    <div class ="misskey-icon">
-                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
-                    </div>
-                    <div class ="misskey-caption">
-                        <p>misskey.io</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/takenokogohan96">
-                <div class="linkbutonn">
-                    <div class ="misskey-icon">
-                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
-                    </div>
-                    <div class ="misskey-caption">
-                        <p>github</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.youtube.com/channel/UCpMu4e-LOxfTBLCHquU5_Zg">
-                <div class="linkbutonn">
-                    <div class ="misskey-icon">
-                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
-                    </div>
-                    <div class ="misskey-caption">
-                        <p>Youtube</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://steamcommunity.com/id/takenokogohan96/">
-                <div class="linkbutonn">
-                    <div class ="misskey-icon">
-                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
-                    </div>
-                    <div class ="misskey-caption">
-                        <p>Sream</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://psnprofiles.com/takenokogohan96">
-                <div class="linkbutonn">
-                    <div class ="misskey-icon">
-                        <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
-                    </div>
-                    <div class ="misskey-caption">
-                        <p>PSN</p>
-                    </div>
-                </div>
-            </a>
+        <div class="symbolContainer">
+            <div class="takenoSymbol">
+                <picture>
+                    <source srcset="/img/Takeno_light.svg" media="(prefers-color-scheme: dark)">
+                    <source srcset="/img/Takeno_dark.svg">
+                    <img src="/img/Takeno_dark.svg" alt="Takeno icon" class="icon">
+                </picture>
+            </div>
+            <div class="comment">
+                <p>☕ &lt; Coffee is Oishii.</p>
+            </div>
         </div>
-    </div>
 
-    -->
+        <div class="indexContainer">
+            <button @click="clickbutton_profile" class="profilebutton">profile</button>
+            <button @click="clickbutton_link" class="linklistbutton">links</button>
+        </div>
+
+        <div class="profileContainer" v-if="isVisibleProfile">
+            <p>Profile</p>
+        </div>
+
+        <div class="linkContainer" v-if="isVisibleLink">
+            <div class="accountlist">
+                <a href="https://misskey.io/@takenokogohan96">
+                    <div class="linkbutonn">
+                        <div class ="misskey-icon">
+                            <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                        </div>
+                        <div class ="misskey-caption">
+                            <p>misskey.io</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/takenokogohan96">
+                    <div class="linkbutonn">
+                        <div class ="misskey-icon">
+                            <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                        </div>
+                        <div class ="misskey-caption">
+                            <p>github</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UCpMu4e-LOxfTBLCHquU5_Zg">
+                    <div class="linkbutonn">
+                        <div class ="misskey-icon">
+                            <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                        </div>
+                        <div class ="misskey-caption">
+                            <p>Youtube</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://steamcommunity.com/id/takenokogohan96/">
+                    <div class="linkbutonn">
+                        <div class ="misskey-icon">
+                            <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                        </div>
+                        <div class ="misskey-caption">
+                            <p>Sream</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://psnprofiles.com/takenokogohan96">
+                    <div class="linkbutonn">
+                        <div class ="misskey-icon">
+                            <img src="/img/Takeno_dark.svg" alt="Takeno icon" width="36px">
+                        </div>
+                        <div class ="misskey-caption">
+                            <p>PSN</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            const app = Vue.createApp({
+                data() {
+                    return {
+                        isVisibleProfile: false,
+                        isVisibleLink: false
+                    };
+                },
+                methods: {
+                    clickbutton_profile() {
+                        this.isVisibleProfile = !this.isVisibleProfile;
+                        this.isVisibleLink = false;
+                    },
+                    clickbutton_link() {
+                        this.isVisibleLink = !this.isVisibleLink;
+                        this.isVisibleProfile = false;
+                    }
+                }
+            });
+            app.mount('#app');
+        </script>
+    </div>
 </body>
 </html>
