@@ -16,31 +16,11 @@
 }
 
 @media (prefers-color-scheme: light) {
-   body {
-      background-color: var(--10White);   
-   }
-
-   h1 {
-      color: var(--90Black);
-   }
-
-   .accountlist button {
-      border: 1px solid var(--90Black);
-   }
+   body { background-color: var(--10White); }
 }
 
 @media (prefers-color-scheme: dark) {
-   body {
-      background-color: var(--90Black);   
-   }
-
-   h1 {
-      color: var(--10White);
-   }
-
-   .accountlist button {
-      border: 1px solid var(--10White);
-   }
+   body { background-color: var(--90Black); }
 }
 
 /*symbolContainer*/
@@ -62,11 +42,10 @@
 @media screen and (min-width:768px) and ( max-width:1024px) {
    .icon{ width: 384px; }
    .comment{ font-size: 30px; }
-   .symbolContainer{ height: 768px; }
 }
 @media screen and (min-width:1024px)  {
-   .icon{ width: 512px; }
-   .comment{ font-size: 40px; }
+   .icon{ width: 384px; }
+   .comment{ font-size: 30px; }
    .symbolContainer{ height: 768px; }
 }
 
@@ -77,11 +56,28 @@
    justify-content: center;
    color: #7F7F7F;
    text-decoration: underline;
+   font-size: 16px;
 }
 
 .profilebutton{ margin: 15px; }
 .linklistbutton{ margin: 15px; }
 
+@media screen and (min-width:768px) and ( max-width:1024px) {
+   .indexContainer{
+      margin-top: 32px;
+      font-size: 24px;
+   }
+   .profilebutton{ margin: 20px; }
+   .linklistbutton{ margin: 20px; }
+}
+@media screen and (min-width:1024px)  {
+   .indexContainer{
+      margin-top: 32px;
+      font-size: 24px;
+   }
+   .profilebutton{ margin: 20px; }
+   .linklistbutton{ margin: 20px; }
+}
 /*linkContainer*/
 /*
 .linkContainer{
