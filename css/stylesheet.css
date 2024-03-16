@@ -23,69 +23,35 @@
    body { background-color: var(--90Black); }
 }
 
+/*mainContainer*/
+.mainContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   height: 100vh;
+}
+
 /*symbolContainer*/
 
 .symbolContainer{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   height: 60vh;
+   
 }
 
-.takenoSymbol{ text-align: center; }
+
 .icon{ width: 256px; }
-.comment{ 
-   text-align: center; 
-   font-size: 20px;
-}
 
 @media screen and (min-width:768px) and ( max-width:1024px) {
-   .icon{ width: 384px; }
-   .comment{ font-size: 30px; }
+
 }
 @media screen and (min-width:1024px)  {
-   .icon{ width: 384px; }
-   .comment{ font-size: 30px; }
-   .symbolContainer{ height: 100vh; }
+
 }
 
-/*indexContainer*/
-.indexContainer{
-   margin-top: 23px;
-   display: flex;
-   justify-content: center;
-   color: #7F7F7F;
-   text-decoration: underline;
-   font-size: 16px;
-}
+/*aboutContainer*/
 
-.profilebutton{ margin: 15px; }
-.linklistbutton{ margin: 15px; }
+.aboutContainer{
 
-@media screen and (min-width:768px) and ( max-width:1024px) {
-   .indexContainer{
-      margin-top: 32px;
-      font-size: 24px;
-   }
-   .profilebutton{ margin: 20px; }
-   .linklistbutton{ margin: 20px; }
-}
-@media screen and (min-width:1024px)  {
-   .indexContainer{
-      margin-top: 32px;
-      font-size: 24px;
-   }
-   .profilebutton{ margin: 20px; }
-   .linklistbutton{ margin: 20px; }
-}
-
-/*linkContainer*/
-
-.linkContainer{
-   margin-top: 23px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 }
 
 .accountlist{
@@ -121,13 +87,9 @@
    justify-content: center;
 }
 
-.misskey-caption p{
-   font-size: 16px;
-}
-
 @media screen and (min-width:768px) and ( max-width:1024px) {
-   .accountlist{ width: 540px; }
+
 }
 @media screen and (min-width:1024px)  {
-   .accountlist{ width: 540px; }
+
 }
