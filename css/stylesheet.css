@@ -15,6 +15,15 @@
    font-style: normal;
 }
 
+hr {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.accentcolor{
+   color: var(--takeno_green);
+}
+
 @media (prefers-color-scheme: light) {
    body { background-color: var(--10White); }
 }
@@ -50,12 +59,9 @@
 
 /*aboutContainer*/
 
-.aboutContainer{
-
-}
-
-.accountlist{
-   display: flex;
+.linkContainer{
+   display: none;
+   /*display: flex;*/
    flex-wrap: wrap;
    justify-content: center;
    width:270px;
