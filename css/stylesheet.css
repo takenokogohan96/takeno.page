@@ -35,7 +35,7 @@ hr {
 /*mainContainer*/
 .mainContainer{
    display: flex;
-   gap: 50px;
+   gap: 56px;
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
@@ -58,45 +58,36 @@ hr {
 
 }
 
-/*aboutContainer*/
+/*buttonContainer*/
 
-.linkContainer{
-   display: none;
-   /*display: flex;*/
-   flex-wrap: wrap;
-   justify-content: center;
-   width:270px;
+.buttonContainer{
+   display: flex;
+   gap: 16px;
+   justify-content: space-between;
+   margin-top: 24px;
 }
 
-.linkbutonn {
-   height:48px;
-   width:240px;
-   margin: 15px;
-   background-color: #303030;
-
+.linkbutton{
    display: flex;
    align-items: center;
-   justify-content: center;
+   width: 42px;
+   height: 42px;
 }
 
-.misskey-icon {
-   height: 48px;
-   width: 48px;
+@media (prefers-color-scheme: light) {
+   .linkbutton { border: 1px solid var(--90Black); }
+}
+
+@media (prefers-color-scheme: dark) {
+   .linkbutton { border: 1px solid var(--10White); }
+}
+
+.buttonimg {
    display: flex;
-   align-items: center;
    justify-content: center;
-}
+ }
 
-.misskey-caption {
-   height: 48px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-@media screen and (min-width:768px) and ( max-width:1024px) {
-
-}
-@media screen and (min-width:1024px)  {
-
+.buttonimg img{
+   width: 60%;
+   height: 60%;
 }
