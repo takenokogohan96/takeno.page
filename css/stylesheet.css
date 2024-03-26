@@ -35,11 +35,14 @@ hr {
 /*mainContainer*/
 .mainContainer{
    display: flex;
-   gap: 56px;
+   column-gap: 56px;
+   row-gap: 32px;
+   height: 100vh;
+   flex-wrap: wrap;
+   align-content: center;
    justify-content: center;
    align-items: center;
-   flex-wrap: wrap;
-   height: 100vh;
+
 }
 
 /*symbolContainer*/
