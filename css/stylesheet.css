@@ -36,7 +36,7 @@ hr {
    display: flex;
    column-gap: 56px;
    row-gap: 32px;
-   height: 100vh;
+   height: 100svh;
    flex-wrap: wrap;
    align-content: center;
    justify-content: center;
