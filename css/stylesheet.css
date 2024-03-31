@@ -1,8 +1,9 @@
 /*Overall*/
 
 :root {
-   --takeno_green: #4f7165;
-   --deep_green: #2b3a36;
+   --light_green: #88a69c;
+   --green: #4f7165;
+   --dark_green: #2b3a36;
    --cinnabar: #ff3300;
    --10White: #e6e6e6;
    --90Black: #1a1a1a;
@@ -20,16 +21,14 @@ hr {
    margin-bottom: 10px;
 }
 
-.profileAccent{
-   color: var(--takeno_green);
-}
-
 @media (prefers-color-scheme: light) {
    body { background-color: var(--10White); }
+   .profileAccent { color: var(--green); }
 }
 
 @media (prefers-color-scheme: dark) {
    body { background-color: var(--90Black); }
+   .profileAccent { color: var(--light_green); }
 }
 
 /*mainContainer*/
