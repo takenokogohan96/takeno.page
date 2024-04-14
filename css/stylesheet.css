@@ -74,15 +74,16 @@ hr {
    align-items: center;
    width: 42px;
    height: 42px;
+   border: 1px solid;
 }
 
-@media (prefers-color-scheme: light) {
-   .linkbutton { border: 1px solid var(--90Black); }
-}
-
-@media (prefers-color-scheme: dark) {
-   .linkbutton { border: 1px solid var(--10White); }
-}
+@media (prefers-color-scheme: light) { .linkbutton { border-color: var(--90Black); } }
+@media (prefers-color-scheme: dark) { .linkbutton { border-color: var(--10White); } }
+#misskeyio-button:hover{ background-color: rgba(150, 208, 74, 0.5); }
+#github-button:hover{ background-color: rgba(106, 110, 115, 0.5); }
+#steam-button:hover{background-color: rgba(0, 173, 239, 0.5); }
+#psn-button:hover{ background-color: rgba(8, 73, 159, 0.5); }
+#youtube-button:hover{ background-color: rgba(255, 0, 0, 0.5); }
 
 .buttonimg {
    display: flex;
