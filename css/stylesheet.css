@@ -19,20 +19,27 @@
 
    hr {
       height: 1px;
-      background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+      
       border: none;
-  }
+      margin: 0 auto;
+   }
+
+   @media screen and (min-width: 600px) {
+      hr { width: 600px; }
+   }
    
 }
 
 @media (prefers-color-scheme: light) {
    body { background-color: var(--10White); }
    .profileAccent { color: var(--green); }
+   hr { background: linear-gradient(to right, var(--10White), var(--90Black), var(--10White));}
 }
 
 @media (prefers-color-scheme: dark) {
    body { background-color: var(--90Black); }
    .profileAccent { color: var(--light_green); }
+   hr { background: linear-gradient(to right, var(--90Black), var(--10White), var(--90Black));}
 }
 
 /*Container*/
@@ -48,6 +55,8 @@
    margin-bottom: 24px;
    font-size: 20px;
 }
+@media (prefers-color-scheme: light) { .coffee { font-style: var(--90Black); } }
+@media (prefers-color-scheme: dark) { .coffee { font-style: var(--10White); } }
 /**mainContainer**/
 .mainContainer{
    margin-top: 48px;
