@@ -14,11 +14,15 @@
    font-optical-sizing: auto;
    font-weight: 400;
    font-style: normal;
-}
 
-hr {
-   margin-top: 10px;
-   margin-bottom: 10px;
+   line-height: 150%;
+
+   hr {
+      height: 1px;
+      background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+      border: none;
+  }
+   
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,33 +35,45 @@ hr {
    .profileAccent { color: var(--light_green); }
 }
 
-/*mainContainer*/
-.mainContainer{
-   display: flex;
-   column-gap: 56px;
-   row-gap: 32px;
+/*Container*/
+.Container{
    height: 100svh;
-   flex-wrap: wrap;
    align-content: center;
+}
+
+/**coffeeisoishii**/
+.coffee{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 24px;
+   font-size: 20px;
+}
+/**mainContainer**/
+.mainContainer{
+   margin-top: 48px;
+   margin-bottom: 48px;
+
+   display: flex;
+   column-gap: 54px;
+   row-gap: 48px;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-
 }
 
 /**symbolContainer**/
 
-.Symbol{ width: 128px; }
-
+.Symbol{ width: 96px; }
 
 /**profileContainer**/
 /***listContainer***/
 /***buttonContainer***/
 
-.buttonContainer{
+.ExternalServiceContainer{
+   margin-top: 24px;
    display: flex;
    gap: 16px;
-   justify-content: space-between;
-   margin-top: 24px;
+   justify-content: center;
 }
 
 .linkbutton{
@@ -65,11 +81,10 @@ hr {
    align-items: center;
    width: 42px;
    height: 42px;
-   border: 1px solid;
 }
 
-@media (prefers-color-scheme: light) { .linkbutton { border-color: var(--90Black); } }
-@media (prefers-color-scheme: dark) { .linkbutton { border-color: var(--10White); } }
+@media (prefers-color-scheme: light) { .linkbutton:hover { border: 1px solid var(--90Black); } }
+@media (prefers-color-scheme: dark) { .linkbutton:hover { border: 1px solid var(--10White); } }
 #misskeyio-button:hover{ background-color: rgba(150, 208, 74, 0.5); }
 #github-button:hover{ background-color: rgba(106, 110, 115, 0.5); }
 #steam-button:hover{background-color: rgba(0, 173, 239, 0.5); }
