@@ -45,6 +45,7 @@
 
    @media screen and (orientation: portrait) {
       flex-direction:column;
+      text-align: center;
    }
 }
 
