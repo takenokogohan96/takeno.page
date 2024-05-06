@@ -4,7 +4,7 @@
    --light_green: #88a69c;
    --green: #4f7165;
    --dark_green: #2b3a36;
-   --cinnabar: #ff3300;
+   --cinnabar: #ff6039;
    --10White: #e6e6e6;
    --90Black: #1a1a1a;
 
@@ -53,3 +53,7 @@
 
 /***symbolContainer***/
 .Symbol{ width: 96px; }
+
+a:hover,u:hover{
+   color:var(--cinnabar);
+ }
