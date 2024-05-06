@@ -16,30 +16,16 @@
    font-style: normal;
 
    line-height: 150%;
-
-   hr {
-      height: 1px;
-      
-      border: none;
-      margin: 0 auto;
-   }
-
-   @media screen and (min-width: 600px) {
-      hr { width: 600px; }
-   }
-   
 }
 
 @media (prefers-color-scheme: light) {
    body { background-color: var(--10White); }
    .profileAccent { color: var(--green); }
-   hr { background: linear-gradient(to right, var(--10White), var(--90Black), var(--10White));}
 }
 
 @media (prefers-color-scheme: dark) {
    body { background-color: var(--90Black); }
    .profileAccent { color: var(--light_green); }
-   hr { background: linear-gradient(to right, var(--90Black), var(--10White), var(--90Black));}
 }
 
 /*Container*/
@@ -48,64 +34,15 @@
    align-content: center;
 }
 
-/**coffeeisoishii**/
-.coffee{
-   display: flex;
-   justify-content: center;
-   margin-bottom: 24px;
-   font-size: 20px;
-}
-@media (prefers-color-scheme: light) { .coffee { font-style: var(--90Black); } }
-@media (prefers-color-scheme: dark) { .coffee { font-style: var(--10White); } }
 /**mainContainer**/
 .mainContainer{
-   margin-top: 48px;
-   margin-bottom: 48px;
-
    display: flex;
-   column-gap: 54px;
-   row-gap: 48px;
+   gap: 48px;
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
+   margin: 25px;
 }
 
-/**symbolContainer**/
-
+/***symbolContainer***/
 .Symbol{ width: 96px; }
-
-/**profileContainer**/
-/***listContainer***/
-/***buttonContainer***/
-
-.ExternalServiceContainer{
-   margin-top: 24px;
-   display: flex;
-   gap: 16px;
-   justify-content: center;
-}
-
-.linkbutton{
-   display: flex;
-   align-items: center;
-   width: 42px;
-   height: 42px;
-}
-
-@media (prefers-color-scheme: light) { .linkbutton:hover { border: 1px solid var(--90Black); } }
-@media (prefers-color-scheme: dark) { .linkbutton:hover { border: 1px solid var(--10White); } }
-#misskeyio-button:hover{ background-color: rgba(150, 208, 74, 0.5); }
-#github-button:hover{ background-color: rgba(106, 110, 115, 0.5); }
-#steam-button:hover{background-color: rgba(0, 173, 239, 0.5); }
-#psn-button:hover{ background-color: rgba(8, 73, 159, 0.5); }
-#youtube-button:hover{ background-color: rgba(255, 0, 0, 0.5); }
-
-.buttonimg {
-   display: flex;
-   justify-content: center;
- }
-
-.buttonimg img{
-   width: 60%;
-   height: 60%;
-}
