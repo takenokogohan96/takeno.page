@@ -1,13 +1,13 @@
 const handleReverseProxy = async (context) => {
     const originalUrl = context.request.url;
     const url = new URL(originalUrl);
-    // /takeno-io-hub/内でなければ処理を中断
-    if (url.pathname.indexOf("/takeno-io-hub/") !== 0) {
+    // /hub/内でなければ処理を中断
+    if (url.pathname.indexOf("/hub/") !== 0) {
       return await context.next();
     }
-    // /takeno-io-hub/内であればhttps://takeno-io-hub.pages.devよりコンテンツを取得
+    // /hub/内であればhttps://takeno-io-hub.pages.devよりコンテンツを取得
     const newUrl = new URL(
-      `https://takeno-io-hub.pages.dev${url.pathname.replace("/takeno-io-hub/", "/")}${url.search}`
+      `https://takeno-io-hub.pages.dev${url.pathname.replace("/hub/", "/")}${url.search}`
     );
     const response = await fetch(new Request(newUrl), {
       headers: new Headers(context.request.headers),
