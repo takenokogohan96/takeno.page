@@ -41,11 +41,34 @@
                         <li><span class="profileAccent">Name</span>: Takeno</li>
                         <li><span class="profileAccent">Personality</span>: INFJ</li>
                         <li><span class="profileAccent">Uptime</span>: 1999-02-01</li>
-                        <li><span class="profileAccent">Links</span>: <u><a href="https://takeno.io/hub" target="_blank" rel="noopener noreferrer">takeno.io/hub</a></u></li>
+                        <li><span class="profileAccent">WebSite</span>: takeno.io</li>
                     </ul>
                 </div>
             </div>
         </div>
+        
+        <div id="ButtonContainer" class="ButtonContainer">
+            <p id="Button">LINK</p>
+        </div>
+
+        <div id="linkContainer" class="linkContainer" style="display: none;">
+            <button onclick="window.open('https://misskey.io/@takenokogohan96')"><u>Misskey.io</u></button>
+            <button onclick="window.open('https://live-theater.net/@takenokogohan96')"><u>LIVE THE@TER NET</u></button>
+            <button onclick="window.open('https://www.youtube.com/c/takenokogohan96page')"><u>Youtube</u></button>
+            <button onclick="window.open('https://steamcommunity.com/id/takenokogohan96')"><u>Steam</u></button>
+            <button onclick="window.open('https://psnprofiles.com/takenokogohan96')"><u>PSNPROFILES</u></button>
+            <button onclick="window.open('https://www.gran-turismo.com/gb/gt7/user/mymenu/29e73fde-0d90-41c0-8fb4-700dbd0de650/profile')"><u>gran-turismo.com</u></button>
+            <button onclick="window.open('https://github.com/takenokogohan96')"><u>Github</u></button>
+            <button onclick="window.open('https://takenoserver.net')"><u>Takeno Server</u></button>
+        </div>
     </div>
+
+    <script>
+        document.getElementById("Button").addEventListener("click", function() {
+            document.getElementById("ButtonContainer").style.display = "none";
+            document.getElementById("linkContainer").style.display = "block";
+        });
+    </script>
+
 </body>
 </html>
