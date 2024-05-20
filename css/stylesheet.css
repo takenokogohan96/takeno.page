@@ -57,3 +57,32 @@
 a:hover,u:hover{
    color:var(--cinnabar);
  }
+
+/**ButtonContainer**/
+
+.ButtonContainer {
+   position: absolute;
+   top: 75%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+/**linkContainer**/
+
+.linkContainer {
+   display: none;
+   position: absolute;
+   text-align: center;
+   top: 75%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+h1 {
+   text-align: left;
+}
+
+button{
+   text-align: left;
+   font-size: 12px;
+}
