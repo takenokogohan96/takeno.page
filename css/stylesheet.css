@@ -1,14 +1,15 @@
 /*Overall*/
 
 :root {
-   --light_green: #88a69c;
-   --green: #4f7165;
-   --dark_green: #2b3a36;
-   --cinnabar: #ff6039;
-   --10White: #e6e6e6;
-   --90Black: #1a1a1a;
-
    color-scheme: light dark;
+
+   --green_light: #88a69c;
+   --green: #4f7165;
+   --green_dark: #2b3a36;
+   --cinnabar: #ff6039;
+   --Black_10: #e6e6e6;
+   --Black_50: #808080;
+   --Black_90: #1a1a1a;
 
    font-family: "Kode Mono", monospace;
    font-optical-sizing: auto;
@@ -21,13 +22,13 @@
 }
 
 @media (prefers-color-scheme: light) {
-   body { background-color: var(--10White); }
+   body { background-color: var(--Black_10); }
    .profileAccent { color: var(--green); }
 }
 
 @media (prefers-color-scheme: dark) {
-   body { background-color: var(--90Black); }
-   .profileAccent { color: var(--light_green); }
+   body { background-color: var(--Black_90); }
+   .profileAccent { color: var(--green_light); }
 }
 
 /*Container*/
