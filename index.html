@@ -48,7 +48,7 @@
         </div>
         
         <div id="ButtonContainer" class="ButtonContainer">
-            <p id="Button">More</p>
+            <button id="MoreButton">More</button>
         </div>
 
         <div id="linkContainer" class="linkContainer" style="display: none;">
@@ -64,7 +64,7 @@
     </div>
 
     <script>
-        document.getElementById("Button").addEventListener("click", function() {
+        document.getElementById("MoreButton").addEventListener("click", function() {
             document.getElementById("ButtonContainer").style.display = "none";
             document.getElementById("linkContainer").style.display = "block";
         });

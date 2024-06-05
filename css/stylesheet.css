@@ -8,7 +8,9 @@
    --color_green_dark: #2b3a36;
    --color_cinnabar: #ff6039;
    --color_Black_10: #e6e6e6;
+   --color_Black_30: #b3b3b3;
    --color_Black_50: #808080;
+   --color_Black_70: #4d4d4d;
    --color_Black_90: #1a1a1a;
 
    font-family: "Kode Mono", monospace;
@@ -22,13 +24,21 @@
 }
 
 @media (prefers-color-scheme: light) {
-   body { background-color: var(--color_Black_10); }
+   body { 
+      color: var(--color_Black_90);
+      background-color: var(--color_Black_10); 
+   }
    .color_green { color: var(--color_green); }
+   .color_gray { color: var(--color_Black_50); }
 }
 
 @media (prefers-color-scheme: dark) {
-   body { background-color: var(--color_Black_90); }
+   body { 
+      color: var(--color_Black_10);
+      background-color: var(--color_Black_90); 
+   }
    .color_green { color: var(--color_green_light); }
+   .color_gray { color: var(--color_Black_50); }
 }
 
 /*Container*/
@@ -63,11 +73,21 @@ a:hover,u:hover{
 
 .ButtonContainer {
    position: absolute;
-   top: 75%;
+   top: 70%;
    left: 50%;
    transform: translateX(-50%);
 }
 
+#MoreButton { 
+   color:var(--color_Black_50);
+   border: 1px solid var(--color_Black_50);
+   padding: 2px 15px;
+}
+
+#MoreButton:hover { 
+   color:var(--color_cinnabar);
+   border: 1px solid var(--color_cinnabar);
+}
 /**linkContainer**/
 
 .linkContainer {
