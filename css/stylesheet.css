@@ -54,7 +54,7 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   margin: 25px;
+   margin: 0px 25px 0px 25px;
 
    @media screen and (orientation: portrait) {
       flex-direction:column;
@@ -62,18 +62,13 @@
    }
 }
 
-/***symbolContainer***/
 .Symbol{ width: 96px; }
-
-a:hover,u:hover{
-   color:var(--color_cinnabar);
- }
 
 /**ButtonContainer**/
 
 .ButtonContainer {
    position: absolute;
-   padding-top: 25px;
+   padding-top: 45px;
    left: 50%;
    transform: translateX(-50%);
 }
@@ -88,16 +83,21 @@ a:hover,u:hover{
    color:var(--color_cinnabar);
    border: 1px solid var(--color_cinnabar);
 }
+
 /**linkContainer**/
 
 .linkContainer {
    display: none;
    position: absolute;
    text-align: center;
-   top: 75%;
+   padding-top: 40px;
    left: 50%;
    transform: translateX(-50%);
 }
+
+a:hover,u:hover{
+   color:var(--color_cinnabar);
+ }
 
 h1 {
    text-align: left;
