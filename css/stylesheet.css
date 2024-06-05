@@ -1,14 +1,17 @@
 /*Overall*/
 
 :root {
-   --light_green: #88a69c;
-   --green: #4f7165;
-   --dark_green: #2b3a36;
-   --cinnabar: #ff6039;
-   --10White: #e6e6e6;
-   --90Black: #1a1a1a;
-
    color-scheme: light dark;
+
+   --color_green_light: #88a69c;
+   --color_green: #4f7165;
+   --color_green_dark: #2b3a36;
+   --color_cinnabar: #ff6039;
+   --color_Black_10: #e6e6e6;
+   --color_Black_30: #b3b3b3;
+   --color_Black_50: #808080;
+   --color_Black_70: #4d4d4d;
+   --color_Black_90: #1a1a1a;
 
    font-family: "Kode Mono", monospace;
    font-optical-sizing: auto;
@@ -21,13 +24,21 @@
 }
 
 @media (prefers-color-scheme: light) {
-   body { background-color: var(--10White); }
-   .profileAccent { color: var(--green); }
+   body { 
+      color: var(--color_Black_90);
+      background-color: var(--color_Black_10); 
+   }
+   .color_green { color: var(--color_green); }
+   .color_gray { color: var(--color_Black_50); }
 }
 
 @media (prefers-color-scheme: dark) {
-   body { background-color: var(--90Black); }
-   .profileAccent { color: var(--light_green); }
+   body { 
+      color: var(--color_Black_10);
+      background-color: var(--color_Black_90); 
+   }
+   .color_green { color: var(--color_green_light); }
+   .color_gray { color: var(--color_Black_50); }
 }
 
 /*Container*/
@@ -43,7 +54,7 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   margin: 25px;
+   margin: 0px 25px 0px 25px;
 
    @media screen and (orientation: portrait) {
       flex-direction:column;
@@ -51,20 +62,26 @@
    }
 }
 
-/***symbolContainer***/
 .Symbol{ width: 96px; }
-
-a:hover,u:hover{
-   color:var(--cinnabar);
- }
 
 /**ButtonContainer**/
 
 .ButtonContainer {
    position: absolute;
-   top: 75%;
+   padding-top: 45px;
    left: 50%;
    transform: translateX(-50%);
+}
+
+#MoreButton { 
+   color:var(--color_Black_50);
+   border: 1px solid var(--color_Black_50);
+   padding: 2px 15px;
+}
+
+#MoreButton:hover { 
+   color:var(--color_cinnabar);
+   border: 1px solid var(--color_cinnabar);
 }
 
 /**linkContainer**/
@@ -73,10 +90,14 @@ a:hover,u:hover{
    display: none;
    position: absolute;
    text-align: center;
-   top: 75%;
+   padding-top: 40px;
    left: 50%;
    transform: translateX(-50%);
 }
+
+a:hover,u:hover{
+   color:var(--color_cinnabar);
+ }
 
 h1 {
    text-align: left;
