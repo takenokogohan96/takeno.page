@@ -3,13 +3,13 @@
 :root {
    color-scheme: light dark;
 
-   --green_light: #88a69c;
-   --green: #4f7165;
-   --green_dark: #2b3a36;
-   --cinnabar: #ff6039;
-   --Black_10: #e6e6e6;
-   --Black_50: #808080;
-   --Black_90: #1a1a1a;
+   --color_green_light: #88a69c;
+   --color_green: #4f7165;
+   --color_green_dark: #2b3a36;
+   --color_cinnabar: #ff6039;
+   --color_Black_10: #e6e6e6;
+   --color_Black_50: #808080;
+   --color_Black_90: #1a1a1a;
 
    font-family: "Kode Mono", monospace;
    font-optical-sizing: auto;
@@ -22,13 +22,13 @@
 }
 
 @media (prefers-color-scheme: light) {
-   body { background-color: var(--Black_10); }
-   .profileAccent { color: var(--green); }
+   body { background-color: var(--color_Black_10); }
+   .color_green { color: var(--color_green); }
 }
 
 @media (prefers-color-scheme: dark) {
-   body { background-color: var(--Black_90); }
-   .profileAccent { color: var(--green_light); }
+   body { background-color: var(--color_Black_90); }
+   .color_green { color: var(--color_green_light); }
 }
 
 /*Container*/
@@ -56,7 +56,7 @@
 .Symbol{ width: 96px; }
 
 a:hover,u:hover{
-   color:var(--cinnabar);
+   color:var(--color_cinnabar);
  }
 
 /**ButtonContainer**/
