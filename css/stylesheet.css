@@ -73,7 +73,7 @@ a:hover,u:hover{
 
 .ButtonContainer {
    position: absolute;
-   top: 70%;
+   padding-top: 25px;
    left: 50%;
    transform: translateX(-50%);
 }
