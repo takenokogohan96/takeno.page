@@ -64,46 +64,24 @@
 
 .Symbol{ width: 96px; }
 
-/**ButtonContainer**/
+/**buttonContainer**/
 
-.ButtonContainer {
+.buttonContainer {
    position: absolute;
    padding-top: 45px;
    left: 50%;
    transform: translateX(-50%);
 }
 
-#MoreButton { 
+button { 
    color:var(--color_Black_50);
    border: 1px solid var(--color_Black_50);
    padding: 2px 15px;
-}
-
-#MoreButton:hover { 
-   color:var(--color_cinnabar);
-   border: 1px solid var(--color_cinnabar);
-}
-
-/**linkContainer**/
-
-.linkContainer {
-   display: none;
-   position: absolute;
-   text-align: center;
-   padding-top: 40px;
-   left: 50%;
-   transform: translateX(-50%);
-}
-
-a:hover,u:hover{
-   color:var(--color_cinnabar);
- }
-
-h1 {
-   text-align: left;
-}
-
-button{
    text-align: left;
    font-size: 12px;
+}
+
+button:hover { 
+   color:var(--color_cinnabar);
+   border: 1px solid var(--color_cinnabar);
 }

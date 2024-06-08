@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <title>Takeno</title>
+
 </head>
 <body>
     <div class="Container">
@@ -50,27 +51,9 @@
             </div>
         </div>
         
-        <div id="ButtonContainer" class="ButtonContainer">
-            <button id="MoreButton">More</button>
-        </div>
-
-        <div id="linkContainer" class="linkContainer" style="display: none;">
-            <button onclick="window.open('https://misskey.io/@takenokogohan96')"><u>Misskey.io</u></button>
-            <button onclick="window.open('https://live-theater.net/@takenokogohan96')"><u>LIVE THE@TER NET</u></button>
-            <button onclick="window.open('https://www.youtube.com/c/takenokogohan96page')"><u>Youtube</u></button>
-            <button onclick="window.open('https://steamcommunity.com/id/takenokogohan96')"><u>Steam</u></button>
-            <button onclick="window.open('https://psnprofiles.com/takenokogohan96')"><u>PSNPROFILES</u></button>
-            <button onclick="window.open('https://github.com/takenokogohan96')"><u>Github</u></button>
-            <button onclick="window.open('https://takenoserver.net')"><u>Takeno Server</u></button>
+        <div id="buttonContainer" class="buttonContainer">
+            <button onclick="location.href='https://takeno.bullet.site'">More</button>
         </div>
     </div>
-
-    <script>
-        document.getElementById("MoreButton").addEventListener("click", function() {
-            document.getElementById("ButtonContainer").style.display = "none";
-            document.getElementById("linkContainer").style.display = "block";
-        });
-    </script>
-
 </body>
 </html>
