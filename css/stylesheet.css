@@ -18,7 +18,7 @@
    font-weight: 400;
    font-style: normal;
 
-   line-height: 160%;
+   line-height: 180%;
 
    user-select: none
 }
@@ -62,26 +62,18 @@
    }
 }
 
-.Symbol{ width: 96px; }
+.Symbol{ width: 84px; }
 
-/**buttonContainer**/
-
-.buttonContainer {
-   position: absolute;
-   padding-top: 45px;
-   left: 50%;
-   transform: translateX(-50%);
-}
+/**button**/
 
 button { 
    color:var(--color_Black_50);
-   border: 1px solid var(--color_Black_50);
-   padding: 2px 15px;
+
+   padding: 2px 5px;
    text-align: left;
-   font-size: 12px;
+   font-size: 14px;
 }
 
 button:hover { 
    color:var(--color_cinnabar);
-   border: 1px solid var(--color_cinnabar);
 }
