@@ -13,6 +13,8 @@
    --color_Black_70: #4d4d4d;
    --color_Black_90: #1a1a1a;
 
+   --color_misskeyio: #91c948;
+
    font-family: "Kode Mono", monospace;
    font-optical-sizing: auto;
    font-weight: 400;
@@ -66,14 +68,26 @@
 
 /**button**/
 
-button { 
-   color:var(--color_Black_50);
-
-   padding: 2px 5px;
+[class^="btn-"] { 
+   display:inline-block;
+   width: 170px;
+   margin: 2px 5px;
    text-align: left;
    font-size: 14px;
+   color:var(--color_Black_50);
 }
 
-button:hover { 
-   color:var(--color_cinnabar);
+.btn-index:before { content: "> What's Takeno?"; }
+.btn-io:before { content: "> What's Happening?"; }
+
+.btn-index:hover::before {
+   content: "→ index.takeno.io";
+   text-decoration:underline;
+   color:var(--color_green);
+}
+
+.btn-io:hover::before {
+   content: "→ misskey.io";
+   text-decoration:underline;
+   color:var(--color_misskeyio);
 }
