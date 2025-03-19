@@ -1,1 +1,1 @@
-https://takeno.io
+https://takeno.page
