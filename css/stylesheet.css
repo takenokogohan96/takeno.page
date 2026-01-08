@@ -81,7 +81,7 @@
 .btn-io:before { content: "> What's Happening?"; }
 
 .btn-index:hover::before {
-   content: "→ index.takeno.page";
+   content: "→ dg.takeno.tech";
    text-decoration:underline;
    color:var(--color_green);
 }
