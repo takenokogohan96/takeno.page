@@ -3,16 +3,13 @@
 :root {
    color-scheme: light dark;
 
-   --color_green_light: #88a69c;
-   --color_green: #4f7165;
-   --color_green_dark: #2b3a36;
-   --color_cinnabar: #ff6039;
    --color_Black_10: #e6e6e6;
    --color_Black_30: #b3b3b3;
    --color_Black_50: #808080;
    --color_Black_70: #4d4d4d;
    --color_Black_90: #1a1a1a;
 
+   --color_Personalblue: #99a8ff;
    --color_misskeyio: #91c948;
 
    font-family: "Kode Mono", monospace;
@@ -30,7 +27,6 @@
       color: var(--color_Black_90);
       background-color: var(--color_Black_10); 
    }
-   .color_green { color: var(--color_green); }
    .color_gray { color: var(--color_Black_50); }
 }
 
@@ -39,7 +35,6 @@
       color: var(--color_Black_10);
       background-color: var(--color_Black_90); 
    }
-   .color_green { color: var(--color_green_light); }
    .color_gray { color: var(--color_Black_50); }
 }
 
@@ -77,13 +72,13 @@
    color:var(--color_Black_50);
 }
 
-.btn-index:before { content: "> What's Takeno?"; }
-.btn-io:before { content: "> What's Happening?"; }
+.btn-index:before { content: "* What's Takeno?"; }
+.btn-io:before { content: "* What's Happening?"; }
 
 .btn-index:hover::before {
-   content: "→ dg.takeno.tech";
+   content: "→ docs.takeno.tech";
    text-decoration:underline;
-   color:var(--color_green);
+   color:var(--color_Personalblue);
 }
 
 .btn-io:hover::before {
