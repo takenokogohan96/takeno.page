@@ -3,11 +3,9 @@
 :root {
    color-scheme: light dark;
 
-   --color_Black_10: #e6e6e6;
-   --color_Black_30: #b3b3b3;
-   --color_Black_50: #808080;
-   --color_Black_70: #4d4d4d;
-   --color_Black_90: #1a1a1a;
+   --color_white: #E5E6ED;
+   --color_gray: #808080;
+   --color_black: #101115;
 
    --color_Personalblue: #99a8ff;
    --color_misskeyio: #91c948;
@@ -24,18 +22,16 @@
 
 @media (prefers-color-scheme: light) {
    body { 
-      color: var(--color_Black_90);
-      background-color: var(--color_Black_10); 
+      color: var(--color_black);
+      background-color: var(--color_white); 
    }
-   .color_gray { color: var(--color_Black_50); }
 }
 
 @media (prefers-color-scheme: dark) {
    body { 
-      color: var(--color_Black_10);
-      background-color: var(--color_Black_90); 
+      color: var(--color_white);
+      background-color: var(--color_black); 
    }
-   .color_gray { color: var(--color_Black_50); }
 }
 
 /*Container*/
@@ -69,11 +65,11 @@
    margin: 2px 5px;
    text-align: left;
    font-size: 14px;
-   color:var(--color_Black_50);
+   color:var(--color_gray);
 }
 
-.btn-index:before { content: "* What's Takeno?"; }
-.btn-io:before { content: "* What's Happening?"; }
+.btn-index:before { content: "→ docs.takeno.tech"; }
+.btn-io:before { content: "→ misskey.io"; }
 
 .btn-index:hover::before {
    content: "→ docs.takeno.tech";
