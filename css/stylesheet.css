@@ -68,11 +68,11 @@
    color:var(--color_gray);
 }
 
-.btn-index:before { content: "→ docs.takeno.tech"; }
+.btn-index:before { content: "→ lab.takeno.tech"; }
 .btn-io:before { content: "→ misskey.io"; }
 
 .btn-index:hover::before {
-   content: "→ docs.takeno.tech";
+   content: "→ lab.takeno.tech";
    text-decoration:underline;
    color:var(--color_Personalblue);
 }
